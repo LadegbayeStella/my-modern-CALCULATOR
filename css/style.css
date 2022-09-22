@@ -1,7 +1,7 @@
-.container{
+ .container{
   text-align: center;
   justify-content: center;
-background: fixed;
+background: fixed; 
 
 }
 #result{
@@ -15,8 +15,8 @@ background: fixed;
    /* text-shadow:   3px 3px 3px  #201f4e ; */
 
 }
-  .calc input{
-  font-family: fantasy;
+   .calc input{
+   font-family: fantasy;
   font-style: normal;
   font-size: 30px;
   width: 70px;
@@ -26,18 +26,34 @@ background: fixed;
   background-color: ghostwhite;
   border-radius: 25px;
   text-shadow: 3px 4px 5px gray;
-  color: deeppink;
-  border: ridge inset 4px;
+  /* color: deeppink;
+  border: ridge inset 4px;  
+  color: #fff; */
+  position: relative;
+ background: linear-gradient(180deg, #2f2f2f, #ece5e5);
+  box-shadow: -8px 0 8px rgba(0, 0, 0, 0.15),
+     0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+  user-select: none;
+  cursor: pointer;
+  font-weight: 400;
+  border-radius: 10px;
 
 }
 .calc{
-background-color:#201f4e;
+  box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.1),
+  10px 5px 10px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(90deg, #2d2d2d, #4d4d4d);
+/* background-color:#201f4e; */
 padding: 10px;
 display: inline-block;
 border-radius: 10px;
 width: 360px;
 border-style: outset 5px;
-box-shadow:  3px 3px 3px 3px #201f4e;
+border-left: 1px solid #0004;
+border-bottom: 1px solid #0004;
+border-top: 1px solid #0009;
+/* box-shadow:  3px 3px 3px 3px #201f4e; */
 }
 .stc{
   font-weight: bolder;
@@ -51,3 +67,25 @@ box-shadow:  3px 3px 3px 3px #201f4e;
   display: inline-block;
   margin: 10px;
 }
+/* .container .value {
+  position: relative;
+  grid-column: span 4;
+  height: 100px;
+  width: calc(100% - 20px);
+  left: 10px;
+  border: none;
+  outline: none;
+  background-color: #a7af7c;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);
+  text-align: right;
+  padding: 10px;
+  font-size: 2em;
+}
+.calc .equal::before{
+  background: linear-gradient(90deg, #1479c9, #ffffff5c);
+  border-left: 1px solid #fff4;
+  border-bottom: 1px solid #fff4;
+  border-top: 1px solid #fff4;
+} */
