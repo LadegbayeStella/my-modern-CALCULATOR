@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <script src="./js/jquery-3.6.0.js"></script>
   <script src="./js/scripts.js"></script>
 
@@ -14,39 +14,55 @@
 </head>
 
 <body>
-  <h1 class="text-dark text-center stc">STELLA'S CALCULATOR</h1><br>
-  <div class="container">
+  <h1 class="text-dark text-center stc">STELLA'S CALCULATOR</h1>
+  <br />
+  <div class="container md-6 sm-3">
     <form action="" name="forms" class="calc">
-      <input type="text" name="screen" id="result"><br>
+      <input type="text" name="screen" id="result" />
 
-
-      <input value="0" type="button" onclick="forms.screen.value += '0'">
-      <input value="1" type="button" onclick="forms.screen.value += '1'">
-      <input value="2" type="button" onclick="forms.screen.value += '2'">
-      <input value="3" type="button" onclick="forms.screen.value += '3'">
+      <br />
+      <input value="c" type="button" onclick="forms.screen.value += 'c'" />
+      <input value="/" type="button" onclick="forms.screen.value += '÷'" />
+      <input value="*" type="button" onclick="forms.screen.value += '*'" />
+      <input value="0" type="button" onclick="forms.screen.value += '0'" />
       <br>
-      <input value="4" type="button" onclick="forms.screen.value += '4'">
-      <input value="5" type="button" onclick="forms.screen.value += '5'">
-      <input value="6" type="button" onclick="forms.screen.value += '6'">
-      <input value="7" type="button" onclick="forms.screen.value += '7'">
+      <input value="7" type="button" onclick="forms.screen.value += '7'" />
+      <input value="8" type="button" onclick="forms.screen.value += '8'" />
+      <input value="9" type="button" onclick="forms.screen.value += '9'" />
+      <input value="-" type="button" onclick="forms.screen.value += '-'" />
       <br>
-      <input value="8" type="button" onclick="forms.screen.value += '8'">
-      <input value="9" type="button" onclick="forms.screen.value += '9'">
-      <input value="-" type="button" onclick="forms.screen.value += '-'">
-      <input value="+" type="button" onclick="forms.screen.value += '+'">
-      <input value="%" type="button" onclick="forms.screen.value += '%'">
-      <input value="*" type="button" onclick="forms.screen.value += '*'">
-      <input value="/" type="button" onclick="forms.screen.value += '/'">
+      <input value="4" type="button" onclick="forms.screen.value += '4'" />
+      <input value="5" type="button" onclick="forms.screen.value += '5'" />
+      <input value="6" type="button" onclick="forms.screen.value += '6'" />
+      <input value="=" type="button" onclick="forms.screen.value = eval(forms.screen.value)" />
+      <br>
+  
+        <input  value="1" type="button" onclick="forms.screen.value += '1'" />
+        <input value=" ÷" type="button" onclick="forms.screen.value += '÷'" />
+        <input value="2" type="button" onclick="forms.screen.value += '2'" />
+        <input value="3" type="button" onclick="forms.screen.value += '3'" />
+      <br />
 
-      <input value="=" type="button" onclick="forms.screen.value = eval(forms.screen.value)"> 
+
+
+
+      <input value="%" type="button" onclick="forms.screen.value += '%'" />
+      <input value="0" type="button" onclick="forms.screen.value += '0'" />
+      <input value="." type="button" onclick="forms.screen.value += '.'" />
+      <input value="+" type="button" onclick="forms.screen.value += '+'" />
+
+
+      <!-- <input
+          value="clear"
+          type="button"
+          onclick="forms.screen.value= clear eval(forms.screen.value)"
+        /> -->
 
       <!-- <input value="/" type="button" onclick="forms.screen" .value+1="/"> -->
 
-      <br>
-
+      <br />
     </form>
   </div>
-
 </body>
 
 </html>
